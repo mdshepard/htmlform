@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>My First Form!</title>
+</head>
+
+<body>
+    <form action="http://localhost:3000" method="post">
+        <fieldset name="personal information">
+            <p>Personal Information</p>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="user_phone">
+            </div>
+            <div>
+                <label for="homepage">Homepage:</label>
+                <input type="url" id="homepage" name="user_homepage">
+            </div>
+        </fieldset>
+        <fieldset name="Preferred Contact Method">
+            <p>Preferred Method of Communication:</p>
+            <div>
+                <label for="preferred communication method"></label>
+                <input type="radio" name="preferred communication method" value="text" id="choice1"> Text
+                <input type="radio" name="preferred communication method" value="phone call" id="choice2"> Phone Call
+                <input type="radio" name="preferred communication method" value="email" id="choice3"> Email
+        </fieldset>
+        </div>
+        <fieldset>
+            <p>Devices Used:</p>
+            <div>
+                <label for="devices"></label>
+                <input type="checkbox" id="devices" name="user_devices" value="Android"> Android
+                <input type="checkbox" id="devices" name="user_devices" value="iOS"> iOS
+                <input type="checkbox" id="devices" name="user_devices" value="Mac"> Mac
+                <input type="checkbox" id="devices" name="user_devices" value="PC"> PC
+            </div>
+        </fieldset>
+        <fieldset>
+            <p>Your Inquiry</p>
+            <div>
+                <label for="message subject">Subject:</label>
+                <select name="message subject" id="message subject">
+                    <option value="Feedback">Feedback</option>
+                    <option value="Bug Report">Bug Report</option>
+                    <option value="Support">Support</option>
+                </select>
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Send your message</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
